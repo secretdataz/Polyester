@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "polyester",
+  "version": "${version}",
+
+  "name": "Polyester",
+  "description": "X-ray mod.",
+  "authors": [
+    "secretdataz",
+    "ate47"
+  ],
+  "contact": {
+    "sources": "https://github.com/secretdataz/polyester"
+  },
+
+  "license": "MIT",
+  "icon": "assets/polyester/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "app.jittapan.polyester.PolyesterMod"
+    ]
+  },
+  "mixins": [
+    "polyester.mixins.json"
+  ],
+
+  "requires": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  }
+}
