@@ -63,8 +63,6 @@ public class PolyesterMod implements ClientModInitializer {
 
         CAVE_BLOCKS = Arrays.asList(Blocks.DIRT, Blocks.GRASS, Blocks.GRAVEL,
                 Blocks.GRASS_BLOCK, Blocks.GRASS_PATH, Blocks.SAND, Blocks.SANDSTONE, Blocks.RED_SAND);
-        
-        this.gamma = MinecraftClient.getInstance().options.gamma;
     }
 
     public void fullBright(boolean flag) {
