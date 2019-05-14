@@ -65,13 +65,9 @@ public class PolyesterMod implements ClientModInitializer {
                 Blocks.GRASS_BLOCK, Blocks.GRASS_PATH, Blocks.SAND, Blocks.SANDSTONE, Blocks.RED_SAND);
     }
 
-    public void assignDefaultGamma() {
-        this.gamma = MinecraftClient.getInstance().options.gamma;
-    }
-
     public void fullBright(boolean flag) {
         MinecraftClient mc = MinecraftClient.getInstance();
-        if (flag) {
+        if (!flag) {
             mc.options.gamma = gamma;
             features.remove("Fullbright");
         } else {
