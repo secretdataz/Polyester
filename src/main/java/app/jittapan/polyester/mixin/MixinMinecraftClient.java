@@ -12,5 +12,6 @@ public abstract class MixinMinecraftClient {
     @Inject(method = "handleInputEvents", at = @At("TAIL"))
     private void handleKeybinds(CallbackInfo callbackInfo) {
         PolyesterMod.INSTANCE.handleKeybinds();
+        PolyesterMod.INSTANCE.assignDefaultGamma();
     }
 }
