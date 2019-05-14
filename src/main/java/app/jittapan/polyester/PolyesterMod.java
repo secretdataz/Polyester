@@ -67,7 +67,7 @@ public class PolyesterMod implements ClientModInitializer {
 
     public void fullBright(boolean flag) {
         MinecraftClient mc = MinecraftClient.getInstance();
-        if (flag) {
+        if (!flag) {
             mc.options.gamma = gamma;
             features.remove("Fullbright");
         } else {
